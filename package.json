@@ -1,7 +1,7 @@
 {
   "name": "google-calendar-by-date",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "A small library that sorts a list of events in Google Calendar by date, which makes it easy to query for all the events on a particular date.",
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter spec"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/emarkchrome/google-calendar-by-date.git"
   },
   "keywords": [],
-  "author": "Emmanuel Mark",
+  "author": "Emmanuel Mark <info@emmanuelmark.guru>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/emarkchrome/google-calendar-by-date/issues"
