@@ -5,13 +5,13 @@ A small library that sorts a list of events in Google Calendar by date, which ma
 
 ## Installation
 
-    npm install gc-list-sort`
+    npm i google-calendar-by-date
 
 ## Usage
 
-Let sampleData be an API response from [calendar.events.list](https://developers.google.com/calendar/v3/reference/events/list#try-it) as an Object.
+Let sampleData be an API response from [calendar.events.list](https://developers.google.com/calendar/v3/reference/events/list#try-it) as an Object. There is valid sample data in the test/test.js file.
 
-    var googleCalendarListSort = require('gc-list-sort');
+    var googleCalendarListSort = require('google-calendar-by-date');
 
     var eventsByDate = googleCalendarListSort.organizeByDate(sampleData);
 
