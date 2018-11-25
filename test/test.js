@@ -1,4 +1,4 @@
-var googleCalendarOrganizeByDate = require('../index.js');
+var googleCalendarListSort = require('../index.js');
 var expect = require('chai').expect;
 
 var sampleData = {
@@ -135,7 +135,7 @@ var sampleData = {
       "etag": "\"2823009108344000\"",
       "id": "82ghod2irp6584f0j2uq28",
       "status": "confirmed",
-      "htmlLink": "https://www.google.com/calendar/event?eid=ODJnaG9kMmlycG44MjQ2NTg0ZjBqMnVxMjggbWFyY29wb2xvZmxAbQ",
+      "htmlLink": "htmlLink",
       "created": "2013-04-04T17:20:40.000Z",
       "updated": "2014-09-23T20:35:54.172Z",
       "summary": "Sample Event 4",
@@ -199,16 +199,16 @@ var sampleData = {
 
 describe('Main function organizeByDate', function() {
   it('should throw an error when it gets no parameter', function() {
-    expect(googleCalendarOrganizeByDate.organizeByDate.bind(googleCalendarOrganizeByDate)).to.throw('No parameter was entered.');
+    expect(googleCalendarListSort.organizeByDate.bind(googleCalendarListSort)).to.throw('No parameter was entered.');
   });
   it('should throw an error when it gets anythung but an object as a parameter', function() {
-    expect(googleCalendarOrganizeByDate.organizeByDate.bind(googleCalendarOrganizeByDate, 'hello')).to.throw('Parameter is not an object.')
+    expect(googleCalendarListSort.organizeByDate.bind(googleCalendarListSort, 'hello')).to.throw('Parameter is not an object.')
   });
   it('should return an array', function() {
-    expect(googleCalendarOrganizeByDate.organizeByDate(sampleData)).to.be.an.instanceof(Array);
+    expect(googleCalendarListSort.organizeByDate(sampleData)).to.be.an.instanceof(Array);
   });
   it('should return an array with a length of 4', function() {
-    expect(googleCalendarOrganizeByDate.organizeByDate(sampleData)).to.have.lengthOf(4);
+    expect(googleCalendarListSort.organizeByDate(sampleData)).to.have.lengthOf(4);
   });
 
 })

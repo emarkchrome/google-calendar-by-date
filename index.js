@@ -1,5 +1,10 @@
 var moment = require('moment');
 
+/**
+ * Groups Google Calendar API Event List Responses by date
+ * @param {object} data
+ * @return {array}
+ */
 exports.organizeByDate = function(data) {
   if (data === '' || data === null || data === undefined) {
     throw new Error('No parameter was entered.')

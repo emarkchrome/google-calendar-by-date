@@ -4,15 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --reporter spec"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/emarkchrome/google-calendar-by-date.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Emmanuel Mark",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/emarkchrome/google-calendar-by-date/issues"
   },
@@ -23,5 +23,8 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^5.2.0"
+  },
+  "engines": {
+    "node": ">=4.2.4"
   }
 }
