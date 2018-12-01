@@ -1,6 +1,6 @@
 {
   "name": "google-calendar-by-date",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "A small library that sorts a list of events in Google Calendar by date, which makes it easy to query for all the events on a particular date.",
   "main": "index.js",
   "scripts": {
