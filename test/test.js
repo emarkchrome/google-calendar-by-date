@@ -133,6 +133,37 @@ var sampleData = {
     {
       "kind": "calendar#event",
       "etag": "\"2823009108344000\"",
+      "id": "5b2eoc8gv1n5c9l0vv0mvs",
+      "status": "confirmed",
+      "htmlLink": "htmlLink",
+      "created": "2012-02-06T00:04:20.000Z",
+      "updated": "2014-09-23T20:35:54.172Z",
+      "summary": "Sample Event 3",
+      "creator": {
+        "email": "johndoe@example.com",
+        "displayName": "John Doe",
+        "self": true
+      },
+      "organizer": {
+        "email": "johndoe@example.com",
+        "displayName": "John Doe",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2011-03-25T22:00:00-04:00"
+      },
+      "end": {
+        "dateTime": "2011-03-26T10:30:00-04:00"
+      },
+      "iCalUID": "sampleId",
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      }
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"2823009108344000\"",
       "id": "82ghod2irp6584f0j2uq28",
       "status": "confirmed",
       "htmlLink": "htmlLink",
@@ -207,8 +238,8 @@ describe('Main function organizeByDate', function() {
   it('should return an array', function() {
     expect(googleCalendarListSort.organizeByDate(sampleData)).to.be.an.instanceof(Array);
   });
-  it('should return an array with a length of 4', function() {
-    expect(googleCalendarListSort.organizeByDate(sampleData)).to.have.lengthOf(4);
+  it('should return an array with a length of 5', function() {
+    expect(googleCalendarListSort.organizeByDate(sampleData)).to.have.lengthOf(5);
   });
 
 })
