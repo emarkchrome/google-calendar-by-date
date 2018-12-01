@@ -1,5 +1,5 @@
 
-# Google Calendar Event List Sort
+# Google Calendar By Date
 
 A small library that sorts a list of events in Google Calendar by date, which makes it easy to query for all the events on a particular date.
 
@@ -43,6 +43,9 @@ Let sampleData be an API response from [calendar.events.list](https://developers
 	}
 	]
 	*/
+
+## Behavior
+Multi-day event will be copied across all the date objects in which they occur. For example, if an event begins on May 15 and ends on May 16, then it will be a member of the May 15 and May 16 event arrays.
 
 Query dates using Array.filter().
 
